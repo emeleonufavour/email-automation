@@ -1,22 +1,68 @@
 # TechFam Email Automation
 
+A Python tool to automate email sending to multiple recipients.
+It allows scheduling emails at regular intervals or for specific times.
+
 ## Dependencies
 
 - schedule
 - email-validator
 - python-dotenv
 
-## Setup
+## Prerequisites
 
-1. Clone the repository
-2. Create a virtual environment: `python3 -m venv venv`
-3. Activate the environment
-4. Install dependencies: `pip install -r requirements.txt`
+- Python 3.8 or higher.
+- A Gmail account.
 
-## Email Configuration
+## Installation and Setup
 
-## Running the Script
+1. **Clone the Repository**:
 
-```bash
-python -m src.my_python_project.email_sender
-```
+   ```bash
+   git clone https://github.com/your-username/email-automation.git
+   cd email-automation
+   ```
+
+2. **Setup a virtual environment**:
+
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   ```
+
+3. **Install the dependencies**:
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. **Configure Environment Variables**:
+
+   ```bash
+   EMAIL=your_email@gmail.com
+   EMAIL_PASSWORD=your_app_password
+   ```
+
+5. **Run the script**:
+   ```bash
+   python email_automation.py
+   ```
+
+## Usage
+
+1. **Customize variables**:
+
+   ```bash
+   recipients = ["recipient1@example.com", "recipient2@example.com"]
+   subject = "Scheduled Email"
+   body = "Hello, this is an automated email!"
+   ```
+
+2. **Set time interval**:
+   ```bash
+   schedule.every(2).weeks.at("10:00").do(job)
+   ```
+
+## Contribution
+
+Feel free to fork the repository, create a feature branch, and submit a pull request. Contributions are welcome!
