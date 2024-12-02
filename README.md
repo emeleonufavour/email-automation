@@ -23,7 +23,7 @@ It allows scheduling emails at regular intervals or for specific times.
    cd email-automation
    ```
 
-2. **Setup a virtual environment**:
+2. **Setup a virtual environment**:git push -u origin main
 
    ```bash
    python -m venv venv
@@ -39,8 +39,8 @@ It allows scheduling emails at regular intervals or for specific times.
 4. **Configure Environment Variables**:
 
    ```bash
-   EMAIL=your_email@gmail.com
-   EMAIL_PASSWORD=your_app_password
+   SENDER_EMAIL=your_email@gmail.com
+   SENDER_PASSWORD=your_app_password
    ```
 
 5. **Run the script**:
@@ -59,8 +59,14 @@ It allows scheduling emails at regular intervals or for specific times.
    ```
 
 2. **Set time interval**:
+
    ```bash
    schedule.every(2).weeks.at("10:00").do(job)
+   ```
+
+3. **Security**:
+   ```bash
+   Make sure to turn on less secure app access in Google Account -> Security
    ```
 
 ## Contribution
