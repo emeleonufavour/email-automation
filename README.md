@@ -19,7 +19,7 @@ It allows scheduling emails at regular intervals or for specific times.
 1. **Clone the Repository**:
 
    ```bash
-   git clone https://github.com/your-username/email-automation.git
+   git clone https://github.com/emeleonufavour/email-automation.git
    cd email-automation
    ```
 
